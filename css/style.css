@@ -36,9 +36,11 @@ main {
     background: var(--very-dark-blue);
     min-height: 100vh;
     min-width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 4em 0;
 }
 
 /* =====================
