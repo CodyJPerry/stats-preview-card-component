@@ -1,0 +1,24 @@
+/*
+
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+
+*/
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --transparent-white-75: hsla(0, 0%, 100%, 0.75);
+    --transparent-white-60: hsla(0, 0%, 100%, 0.6);
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
