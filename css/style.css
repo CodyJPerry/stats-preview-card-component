@@ -4,6 +4,10 @@ font-family: 'Inter', sans-serif;
 font-family: 'Lexend Deca', sans-serif;
 
 */
+
+/* =====================
+Base Styles ============
+*/
 :root {
     --very-dark-blue: hsl(233, 47%, 7%);
     --dark-desaturated-blue: hsl(244, 38%, 16%);
@@ -11,14 +15,102 @@ font-family: 'Lexend Deca', sans-serif;
     --white: hsl(0, 0%, 100%);
     --transparent-white-75: hsla(0, 0%, 100%, 0.75);
     --transparent-white-60: hsla(0, 0%, 100%, 0.6);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 * {
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Inter', sans-serif;
+    color: var(--white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    background: var(--very-dark-blue);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =====================
+Layout Styles ==========
+*/
+.container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    max-width: 20.4375em;
+}
+
+.component-section {
+    background: var(--dark-desaturated-blue);
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* .component-stats-wrapper {
+    display: flex;
+    flex-direction: column;
+} */
+
+.component-background-img {
+    background: var(--soft-violet) url('../images/image-header-mobile.jpg') no-repeat;
+    /* We want to keep the dark pixels from the image. Multiply fits our use case here. */
+    background-blend-mode: multiply;
+    /* We don't want to set a fixed height on the image. Instead we are using padding as a replacement */
+    padding: 7.5em 0;
+    background-size: cover;
+    object-fit: cover;
+    order: -1;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* =====================
+Typography Styles ======
+*/
+.component-title {
+    font-size: 1.867rem;
+    font-weight: 700;
+    padding: 1.5em 0.5em 0.75em;
+    line-height: 1.15;
+}
+
+.component-text {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 1.5em 2.8em 1.5em;
+    line-height: 1.8;
+    color: var(--transparent-white-75);
+}
+
+.component-stat {
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-bottom: 1.5em;
+}
+
+.stat-text {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 1.75;
+    padding-top: 0.75em;
+    color: var(--transparent-white-60);
+}
+
+.component-accent {
+    color: var(--soft-violet);
 }
