@@ -59,11 +59,6 @@ Layout Styles ==========
     border-radius: 8px;
 }
 
-/* .component-stats-wrapper {
-    display: flex;
-    flex-direction: column;
-} */
-
 .component-background-img {
     background: var(--soft-violet) url('../images/image-header-mobile.jpg') no-repeat;
     /* We want to keep the dark pixels from the image. Multiply fits our use case here. */
@@ -115,4 +110,52 @@ Typography Styles ======
 
 .component-accent {
     color: var(--soft-violet);
+}
+
+/* =====================
+Media Queries ==========
+*/
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 90%;
+        display: flex;
+        flex-direction: row;
+        max-width: 74em;
+        height: 29.733333333333334em;
+    }
+
+    .component-section {
+        text-align: left;
+        flex: 1 1 50%;
+    }
+
+    .component-title {
+        font-size: 2.4rem;
+        padding: 2em 1.5em 0.75em;
+        line-height: 1.25;
+    }
+
+    .component-text {
+        padding: 0 8em 2.8em 3.5em;
+        letter-spacing: 0.2px;
+    }
+
+    .component-stats-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 1.9em;
+        max-width: 90%;
+        margin-left: -0.75em;
+    }
+
+    .component-background-img {
+        background: var(--soft-violet) url(../images/image-header-desktop.jpg) no-repeat;
+        background-blend-mode: multiply;
+        background-size: cover;
+        padding: 0 18em;
+        order: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 8px;
+    }
 }
